@@ -43,7 +43,7 @@ app.layout = html.Div([
                            ],
             value='Select Statistics',
             placeholder='Select a report type',
-            style={'width':800,'padding':3px,'font-size':20px,'textAlign':'center'}
+            style={'width':800,'padding':3,'font-size':20,'textAlign':'center'}
         )
     ]),
     html.Div(dcc.Dropdown(
