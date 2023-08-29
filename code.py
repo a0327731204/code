@@ -32,7 +32,7 @@ year_list = [i for i in range(1980, 2024, 1)]
 # Create the layout of the app
 app.layout = html.Div([
     #TASK 2.1 Add title to the dashboard
-    html.H1("Automobile Statistics Dashboard", style={'textAlign': 'center', 'color': '#503D36','font-size': 26}),#May include style for title
+    html.H1("Automobile Statistics Dashboard", style={'textAlign': 'center', 'color': '#503D36','font-size': 24}),#May include style for title
     html.Div([#TASK 2.2: Add two dropdown menus
         html.Label("Select Statistics:"),
         dcc.Dropdown(
@@ -43,7 +43,7 @@ app.layout = html.Div([
                            ],
             value='Select Statistics',
             placeholder='Select a report type',
-            style={'width':800,'padding':3,'font-size':20,'textAlign':'center'}
+            style={'width':800,'padding':3px,'font-size':20px,'textAlign':'center'}
         )
     ]),
     html.Div(dcc.Dropdown(
@@ -111,7 +111,7 @@ def update_output_container(selected_statistics, input_year):
                 x='unemployment_rate', 
                 y='Automobile_Sales',
                 color='Vehicle_Type', 
-                title="the effect of unemployment rate on vehicle type and sales"))
+                title="The effect of unemployment rate on vehicle type and sales"))
     
 
 
@@ -161,7 +161,5 @@ def update_output_container(selected_statistics, input_year):
         return None
 
 # Run the Dash app
-if __name__ == '__main__':
-    app.run_server(debug=True)
 if __name__ == '__main__':
     app.run_server(debug=True)
